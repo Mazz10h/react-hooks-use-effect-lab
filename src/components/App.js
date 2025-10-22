@@ -3,7 +3,7 @@ import Question from "./Question";
 import quiz from "../data/quiz";
 
 function App() {
-  const [questions, setQuestions] = useState(quiz);
+  const questions = quiz;
   const [currentQuestionId, setCurrentQuestion] = useState(1);
   const [score, setScore] = useState(0);
   const currentQuestion = questions.find((q) => q.id === currentQuestionId);
